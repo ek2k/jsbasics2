@@ -125,7 +125,4 @@ describe("#keys", function(){
   it("returns an empty array if there are no keys", function(){
     expect(methods.keys({})).to.eql([]);
   });
-  it("understands that 1 is not a prime number", function(){
-    expect(methods.isPrime(1)).to.equal(false);
-  });
 });
