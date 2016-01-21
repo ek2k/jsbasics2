@@ -1,5 +1,3 @@
-https://github.com/gSchool/js-functions-part2
-
 # Javascript Fundamentals Part II
 
 1. Fork and clone this repository
