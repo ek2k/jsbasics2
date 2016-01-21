@@ -66,3 +66,66 @@ describe("#isPrime", function(){
     expect(methods.isPrime(1)).to.equal(false);
   });
 });
+
+describe("#findLongestWord", function(){
+  it("returns false if the number is not prime", function(){
+    expect(methods.isPrime(4)).to.equal(false);
+  });
+  it("returns true if the number is prime", function(){
+    expect(methods.isPrime(3)).to.equal(true);
+  });
+  it("understands that 1 is not a prime number", function(){
+    expect(methods.isPrime(1)).to.equal(false);
+  });
+});
+
+describe("#filterLongWords", function(){
+  it("returns false if the number is not prime", function(){
+    expect(methods.isPrime(4)).to.equal(false);
+  });
+  it("returns true if the number is prime", function(){
+    expect(methods.isPrime(3)).to.equal(true);
+  });
+  it("understands that 1 is not a prime number", function(){
+    expect(methods.isPrime(1)).to.equal(false);
+  });
+});
+
+describe("#createObject", function(){
+  it("creates an object based on the two arguments", function(){
+    expect(methods.createObject(1,"hi")).to.eql({"1":"hi"});
+  });
+  it("does not matter what the data types are", function(){
+    expect(methods.createObject(undefined,null)).to.eql({"undefined":null});
+  });
+});
+
+describe("#numberObject", function(){
+  it("returns false if the number is not prime", function(){
+    expect(methods.numberObject(4)).to.eql({0:0,1:5,2:10,3:15});
+  });
+});
+
+describe("#reverseString", function(){
+  it("returns the reversed string", function(){
+    expect(methods.reverseString("awesome")).to.equal("emosewa");
+  });
+});
+
+describe("#youngestPerson", function(){
+  it("returns the name of the lowest age in the array of objects", function(){
+    expect(methods.youngestPerson([{name:"tom",age:22},{name:"bob",age:12}])).to.equal("bob");
+  });
+});
+
+describe("#keys", function(){
+  it("returns an array of the keys in an object", function(){
+    expect(methods.keys({first:"awesome", 1:"sweet"})).to.eql(["first", "1"]);
+  });
+  it("returns an empty array if there are no keys", function(){
+    expect(methods.keys({})).to.eql([]);
+  });
+  it("understands that 1 is not a prime number", function(){
+    expect(methods.isPrime(1)).to.equal(false);
+  });
+});

@@ -19,5 +19,26 @@ module.exports = {
   },
   isPrime: function(){
 
+  },
+  findLongestWord: function(){
+
+  },
+  filterLongWords: function(){
+
+  },
+  createObject: function(){
+
+  },
+  numberObject: function(){
+
+  },
+  reverseString: function(){
+
+  },
+  oldestPerson: function(){
+
+  },
+  keys: function(){
+
   }
 };
