@@ -68,26 +68,14 @@ describe("#isPrime", function(){
 });
 
 describe("#findLongestWord", function(){
-  it("returns false if the number is not prime", function(){
-    expect(methods.isPrime(4)).to.equal(false);
-  });
-  it("returns true if the number is prime", function(){
-    expect(methods.isPrime(3)).to.equal(true);
-  });
-  it("understands that 1 is not a prime number", function(){
-    expect(methods.isPrime(1)).to.equal(false);
+  it("finds the longest word", function(){
+    expect(methods.findLongestWord(["test","awesome","thing","fun"])).to.equal("awesome");
   });
 });
 
 describe("#filterLongWords", function(){
   it("returns false if the number is not prime", function(){
-    expect(methods.isPrime(4)).to.equal(false);
-  });
-  it("returns true if the number is prime", function(){
-    expect(methods.isPrime(3)).to.equal(true);
-  });
-  it("understands that 1 is not a prime number", function(){
-    expect(methods.isPrime(1)).to.equal(false);
+    expect(methods.filterLongWords(["first", "second", "third", "fourth"],5)).to.eql(["second","fourth"]);
   });
 });
 
@@ -114,13 +102,13 @@ describe("#reverseString", function(){
 
 describe("#youngestPerson", function(){
   it("returns the name of the lowest age in the array of objects", function(){
-    expect(methods.youngestPerson([{name:"tom",age:22},{name:"bob",age:12}])).to.equal("bob");
+    expect(methods.youngestPerson([{name:"tom",age:2},{name:"bob",age:12}])).to.include("tom");
   });
 });
 
 describe("#keys", function(){
   it("returns an array of the keys in an object", function(){
-    expect(methods.keys({first:"awesome", 1:"sweet"})).to.eql(["first", "1"]);
+    expect(methods.keys({first:"awesome", 1:"sweet"})).to.include("first", "1");
   });
   it("returns an empty array if there are no keys", function(){
     expect(methods.keys({})).to.eql([]);
