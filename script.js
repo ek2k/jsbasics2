@@ -35,7 +35,7 @@ module.exports = {
   reverseString: function(){
 
   },
-  oldestPerson: function(){
+  youngestPerson: function(){
 
   },
   keys: function(){
