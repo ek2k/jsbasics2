@@ -18,5 +18,5 @@
 4. Write a function `createObject` that takes in two arguments and returns an object with the first argument as the key in the object and the second as the value
 5. Write a function `numberObject` which takes in a number and returns an object with the keys being all the numbers up to the first argument and the values being the numbers up to the first argument times 5. (numberObject(4) returns `{0:0,1:5,2:10,3:15}`)
 5. Write a function `reverseString` which takes a string and returns the string reversed ("awesome" becomes "emosewa")
-5. Write a function called `youngestPerson` that takes an object with names as keys and ages as values (e.g., {'Tom': 22, 'Jane': 46}), and then returns the name of the youngest living person.
+5. Write a function called `youngestPerson` that takes an array of objects with names as keys and ages as values (e.g., [{'Tom': 22, 'Jane': 46}]), and then returns the name of the youngest living person.
 6. Write a function called `keys` that takes an object and returns an array with all of the keys in the object. 
