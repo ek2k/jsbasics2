@@ -74,7 +74,7 @@ describe("#findLongestWord", function(){
 });
 
 describe("#filterLongWords", function(){
-  it("returns false if the number is not prime", function(){
+  it("returns an array with words longer than the second parameter", function(){
     expect(methods.filterLongWords(["first", "second", "third", "fourth"],5)).to.eql(["second","fourth"]);
   });
 });
@@ -89,7 +89,7 @@ describe("#createObject", function(){
 });
 
 describe("#numberObject", function(){
-  it("returns false if the number is not prime", function(){
+  it("returns an object with values in multiples of 5 and keys incrementing by 1", function(){
     expect(methods.numberObject(4)).to.eql({0:0,1:5,2:10,3:15});
   });
 });
