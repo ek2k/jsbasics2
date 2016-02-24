@@ -48,7 +48,7 @@ describe("#isPalindrome", function(){
     expect(methods.isPalindrome("tacocat")).to.equal(true);
   });
   it("returns false if a string is a not palendrome", function(){
-    expect(methods.isPalindrome("awesomeness")).to.equal(false);
+    expect(methods.isPalindrome("newborn")).to.equal(false);
   });
   it("ignores spacing and capitalization", function(){
     expect(methods.isPalindrome("a Man A Plan A Canal Panama")).to.equal(true);
