@@ -102,7 +102,7 @@ describe("#reverseString", function(){
 
 describe("#youngestPerson", function(){
   it("returns the name of the lowest age in the array of objects", function(){
-    expect(methods.youngestPerson([{name:"tom",age:2},{name:"bob",age:12}])).to.include("tom");
+    expect(methods.youngestPerson([{tom:2, bob:12}])).to.include("tom");
   });
 });
 
