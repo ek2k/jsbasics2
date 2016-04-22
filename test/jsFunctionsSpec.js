@@ -69,7 +69,7 @@ describe("#isPrime", function(){
 
 describe("#findLongestWord", function(){
   it("finds the longest word", function(){
-    expect(methods.findLongestWord(["test","awesome","thing","fun"])).to.equal("awesome");
+    expect(methods.findLongestWord(["test","awesome","thing","fun"])).to.equal(7);
   });
 });
 
